@@ -48,6 +48,10 @@
 //   console.log();
 // }
 
+
+/**
+ * ANTRO
+ */
 // Write your logic here
 // let n = 50;
 // let count = 0;
@@ -72,16 +76,61 @@
 
 // square == n ? console.log("Yes") : console.log("No");
 
-let n = 21;
-let count = 0;
-let temp = n;
+// let n = 21;
+// let count = 0;
+// let temp = n;
 
-// console.log(temp/100)
-while(temp/10 > 0){
-  console.log("before : ", temp)
-  count++
-  temp = Math.floor(temp/10)
-  console.log("after : ", temp)
+// // console.log(temp/100)
+// while(temp/10 > 0){
+//   console.log("before : ", temp)
+//   count++
+//   temp = Math.floor(temp/10)
+//   console.log("after : ", temp)
+// }
+
+// console.log(count)
+
+
+/**
+ * REVERSE NUMBER
+ */
+
+//1 :
+// let n = 5001;
+// let temp = n;
+// let newNo = [];
+
+// while (temp > 0) {
+//   let digit = temp % 10;
+//   console.log(digit);
+//   temp = Math.floor(temp / 10);
+//   if (digit == 0 && newNo.length == 0){}
+//   else newNo.push(digit);
+// }
+// console.log("reverse No : ", newNo.join(""));
+
+
+/**
+ * reverse no good approach
+ */
+let n = 1200
+let reversed = 0
+
+while(n > 0){
+  let digit = n%10
+  reversed = reversed*10 + digit
+  n = Math.floor(n/10)
 }
 
-console.log(count)
+console.log(reversed)
+
+    // let temp = n
+    // let newNo = []
+
+    // while(temp > 0){
+    //     let digit = temp%10
+    //     temp = Math.floor(temp/10)
+    //     if (digit == 0 && newNo.length == 0){}
+    //     else newNo.push(digit);
+    // }
+    // return newNo.join("")
