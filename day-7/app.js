@@ -100,8 +100,8 @@
 /**
  * DRAW PATTERN'
  */
-let prompt = require("prompt-sync")();
-let n = Number(prompt("Enter the number: "));
+// let prompt = require("prompt-sync")();
+// let n = Number(prompt("Enter the number: "));
 
 //1
 // for(let i = 1; i <= n; i++){
@@ -142,20 +142,36 @@ let n = Number(prompt("Enter the number: "));
 
 
 //4 X Shape
-let start = 1;
-let end = n;
-for(let i = 1; i <= n; i++){
-  for(let j = 1; j <= n; j++){
-    if(start == j || end == j){
-      process.stdout.write("*")
-    }
-    else if(start > n || end < 0){
-      break
-    }
-    else{
-      process.stdout.write(" ")
-    }
-  }
-  start++, end--;
-  console.log()
-}
+// let start = 1;
+// let end = n;
+// for(let i = 1; i <= n; i++){
+//   for(let j = 1; j <= n; j++){
+//     if(start == j || end == j){
+//       process.stdout.write("*")
+//     }
+//     else if(start > n || end < 0){
+//       break
+//     }
+//     else{
+//       process.stdout.write(" ")
+//     }
+//   }
+//   start++, end--;
+//   console.log()
+// }
+
+//5 Mirror Right angle traingle
+//         *_ 
+//       * *_ 
+//     * * *_  
+//   * * * *_  
+// * * * * *_
+// for(let i = 0; i < n; i++){
+//   for(let s = 0; s < n-i-1; s++){ //5-0-2 = 3 //5-1-2= 2
+//     process.stdout.write("  ")
+//   }
+//   for(let j = 0; j < i+1; j++){
+//     process.stdout.write("* ")
+//   }
+//   console.log()
+// }
