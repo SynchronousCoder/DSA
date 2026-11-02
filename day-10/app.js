@@ -40,22 +40,157 @@
 // console.log("2nd greatest : ", sMax);
 // console.log("1st greatest : ", max);
 
+//3.1) Reverse Array [without extra array]
+// let arr = [10, 20, 30,40,50,60];
+// let i = 0
+// let n = arr.length-1
 
+// console.log("original : ", arr)
 
-//3) Reverse Array
-let arr = [10, 20, 30,40,50,60];
-let i = 0
-let n = arr.length-1
+// while(n > i){
+//   let a = arr[i];
+//   arr[i] = arr[n];
+//   arr[n] = a;
 
-console.log("original : ", arr)
+//   i++;
+//   n--;
+// }
 
-while(n > i){
-  let a = arr[i];
-  arr[i] = arr[n];
-  arr[n] = a;
+// console.log("Reversed : ", arr)
 
-  i++;
-  n--;
-}
+//3.1) Reverse Array [with extra array]
+// let arr = [10, 20, 30,40,50,60];
+// let temp = new Array(arr.length)
+// let j = 0
+// for(let i = arr.length-1; i >= 0; i--){
+//   temp[j] = arr[i]
+//   j++
+// }
+// console.log(temp)
 
-console.log("Reversed : ", arr)
+//4) Array Left Rotation
+// let arr = [1,2,3,4]
+// let i = 0;
+
+// while(arr.length-1 > i){
+//   let first = arr[i]
+//   arr[i] = arr[i+1]
+//   arr[i+1] = first
+//   i++
+// }
+
+// console.log(arr)
+
+/**
+ * 5.1)Moves 0 [with extra space]
+ */
+// let arr = [0, 1, 0, 1, 1];
+//      let temp = new Array(arr.length);
+
+//      let zero = 0;
+//      let one = 0;
+
+//      let i = 0, j = 0;
+
+//      while (j < arr.length) {
+//           if (arr[j] == 0) {
+//                zero++;
+//                j++
+//           } else {
+//                one++;
+//                j++
+//           }
+//      }
+// console.log(zero, one)
+//      while (i < temp.length) {
+//           if (one > 0) {
+//                temp[i] = 1;
+//                i++;
+//                one--;
+//           } else if (zero > 0) {
+//                temp[i] = 0;
+//                i++;
+//                zero--;
+//           } else {
+//                break;
+//           }
+//      }
+
+/**
+ * 5.2)Moves 0 [without extra space]
+ */
+// let arr = [1 ,0 ,1 ,0 ,1 ,0];
+
+// let i = 0;
+// let j = i+1;
+
+// while(j < arr.length){
+//   // 0 < 1
+//   if(arr[i] < arr[j]){
+//     let zero = arr[i]
+//     arr[i] = arr[j]
+//     arr[j] = zero
+
+//     i++, j++;
+//   }
+//   // 0 = 0
+//   else if(arr[i] == arr[j]){
+//     j++
+//   }
+//   // 1 > 0
+//   else{
+//     i++, j++;
+//   }
+// }
+// console.log(arr)
+
+/**
+ * 6) Array Rotation [right]
+ */
+// let arr = [1,2,3,4,5]
+// let n = arr.length - 1
+
+// for(let i = n; i > 0; i--){
+//   let swap = arr[i] //5
+//   arr[i] = arr[i-1] //5->4
+//   arr[i-1] = swap   //4->5
+
+//   console.log(arr)
+// }
+
+/**
+ *
+ */
+// let arr = [-1, 3, -2, 5]
+// let sum = 0;
+// for(let i = 0; i < arr.length; i++){
+//   for(let j = i+1; j< arr.length; j++){
+//     let difference = Math.abs(arr[i] - arr[j])
+//     sum += difference
+//   }
+// }
+// console.log(sum)
+
+/**
+ *
+ */
+// let arr = [1, 2, 1, 2, 1, 3];
+// Write your code here
+// let sumL = 0,sumR = 0;
+// let mid = arr.length / 2 - 1;
+
+// console.log("mid : ", mid)
+
+// for (let i = 0; i <= mid; i++) {
+//   sumL += arr[i];
+// }
+
+// for (let i = mid+1; i < arr.length; i++) {
+//   sumR += arr[i];
+// }
+
+// if (sumL > sumR || sumL < sumR) {
+//   console.log( Math.abs(sumL - sumR))
+// } else {
+//   console.log(0);
+// }
