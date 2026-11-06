@@ -26,7 +26,6 @@
 
 // console.log(arr)
 
-
 /**
  * Sort 1st half Asec and 2nd half Descending of an array
  */
@@ -56,3 +55,33 @@
 // }
 // return
 // console.log(arr)
+
+let arr = ["rock","rock","rock","rock","rock","paper","paper","paper","scissors","scissors",];
+let r = p = s = 0;
+
+let temp = new Array;
+function myResult(string){
+        for(let i = 0; i < arr.length; i++){
+        temp[i] = string
+    }
+}
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] == "rock"){
+        r++
+    }else if(arr[i] == "paper"){
+        p++
+    }else{
+        s++
+    }
+}
+// console.log(r,p,s);
+if(r > p && r > s){
+    myResult("paper")
+}else if(p > r && p > s){
+    myResult("scissors")
+}else{
+    myResult("rock")
+}
+
+console.log(temp)
