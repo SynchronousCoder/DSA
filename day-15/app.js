@@ -118,7 +118,7 @@
  * SORTING
  * Bubble Sort
  */
-// let arr = [5,3,8,1,6]
+// let arr = [3, 2, 9, 10, 5, 6, 7, 3, 4]
 // let n = arr.length
 
 // for(let i = 0; i < n; i++){
@@ -133,35 +133,35 @@
 //         }else{
 //             bIndex = j
 //         }
-//         console.log("bindex : ",arr[bIndex],bIndex,j, arr)
+//         // console.log("bindex : ",arr[bIndex],bIndex,j, arr)
 //     }
-//     console.log(" ")
 // }
+// console.log(arr)
 
 
 /**
  * SORTING
  * Insertion Sort
  */
-let arr = [5,8,1,10,15,7]
-let n = arr.length
+// let arr = [5,8,1,10,15,7]
+// let n = arr.length
 
-for(let i = 1; i < n; i++){
-    let key = i
-    let j = i-1
+// for(let i = 1; i < n; i++){
+//     let key = i
+//     let j = i-1
 
-    while(j >= 0){
-        if(arr[j] < arr[key]) break;
-        else if(arr[j] > arr[key]){
-            let temp = arr[j]
-            arr[j] = arr[key]
-            arr[key] = temp
+//     while(j >= 0){
+//         if(arr[j] < arr[key]) break;
+//         else if(arr[j] > arr[key]){
+//             let temp = arr[j]
+//             arr[j] = arr[key]
+//             arr[key] = temp
 
-            j--
-            key--
-        }
-    }
-    console.log(arr)
-    // console.log(" ")
-}
-// console.log(arr)
+//             j--
+//             key--
+//         }
+//     }
+//     console.log(arr)
+//     // console.log(" ")
+// }
+// // console.log(arr)
